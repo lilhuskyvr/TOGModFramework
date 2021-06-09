@@ -1,0 +1,7 @@
+﻿{
+  "Mod_Name": "TOGModFramework",
+  "Author": "lilhusky",
+  "dllName": "TOGModFramework",
+  "className": "TOGModFrameworkPatch",
+  "startMethod": "Inject"
+}
