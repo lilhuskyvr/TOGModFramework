@@ -1,6 +1,9 @@
-C:\Users\nikon\RiderProjects\TOGModFramework\TOGModFramework\obj\Release\TOGModFramework.csprojResolveAssemblyReference.cache
+D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGModFramework\script_assembly_desc.json
 D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGModFramework\TOGModFramework.dll
 D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGModFramework\TOGModFramework.pdb
+C:\Users\nikon\RiderProjects\TOGModFramework\TOGModFramework\obj\Release\TOGModFramework.csprojResolveAssemblyReference.cache
 C:\Users\nikon\RiderProjects\TOGModFramework\TOGModFramework\obj\Release\TOGModFramework.dll
 C:\Users\nikon\RiderProjects\TOGModFramework\TOGModFramework\obj\Release\TOGModFramework.pdb
-D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\TOGModFramework\script_assembly_desc.json
+D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\!TOGModFramework\script_assembly_desc.json
+D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\!TOGModFramework\TOGModFramework.dll
+D:\Steam\steamapps\common\Tales Of Glory\TalesOfGlory_Data\StreamingAssets\Mods\!TOGModFramework\TOGModFramework.pdb
