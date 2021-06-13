@@ -52,8 +52,8 @@
   <ItemGroup>
     <Compile Include="ConfigManager.cs" />
     <Compile Include="EventManager.cs" />
+    <Compile Include="Extensions\VRCharControllerExtension.cs" />
     <Compile Include="FileManager.cs" />
-    <Compile Include="ModFrameworkObjectSpawner.cs" />
     <Compile Include="ModFrameworkWeaponSpawner.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

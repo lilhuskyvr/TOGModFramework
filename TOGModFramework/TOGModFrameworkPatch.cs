@@ -32,20 +32,19 @@ namespace TOGModFramework
             private static IEnumerator LoadWeapons()
             {
                 yield return new WaitForSeconds(2);
-                if (ConfigManager.local.isLobby)
+
+                ModFrameworkWeaponSpawner.local = new ModFrameworkWeaponSpawner();
+
+                foreach (var weaponRack in FindObjectsOfType<WeaponRack>())
                 {
-                    ModFrameworkWeaponSpawner.local = new ModFrameworkWeaponSpawner();
-
-                    foreach (var weaponRack in FindObjectsOfType<WeaponRack>())
+                    foreach (var slot in weaponRack.Slots)
                     {
-                        foreach (var slot in weaponRack.Slots)
-                        {
-                            ModFrameworkWeaponSpawner.local.weapons.Add(slot);
-                        }
+                        ModFrameworkWeaponSpawner.local.weapons.Add(slot);
                     }
-
-                    ModFrameworkWeaponSpawner.local.loaded = true;
                 }
+
+                ModFrameworkWeaponSpawner.local.loaded = true;
+                ModFrameworkWeaponSpawner.InvokeWeaponsLoadedEvent();
 
                 yield return null;
             }
