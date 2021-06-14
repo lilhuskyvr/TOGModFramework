@@ -72,5 +72,42 @@ namespace TOGModFramework
                 EventManager.InvokeCrossbowBoltFiredEvent(__instance);
             }
         }
+
+        [HarmonyPatch(typeof(LeftHandGrab))]
+        [HarmonyPatch("CreateJoint")]
+        // ReSharper disable once UnusedType.Local
+        private static class LeftHandGrabCreateJointPatch
+        {
+            [HarmonyPostfix]
+            private static void Postfix(LeftHandGrab __instance)
+            {
+                EventManager.InvokeWeaponJointCreatedEvent(__instance.wp, __instance.wp.f);
+            }
+        }
+
+        [HarmonyPatch(typeof(RightHandGrab))]
+        [HarmonyPatch("CreateJoint")]
+        // ReSharper disable once UnusedType.Local
+        private static class RightHandGrabCreateJointPatch
+        {
+            [HarmonyPostfix]
+            private static void Postfix(RightHandGrab __instance)
+            {
+                EventManager.InvokeWeaponJointCreatedEvent(__instance.wp, __instance.wp.f);
+            }
+        }
+
+        [HarmonyPatch(typeof(WeaponBlock))]
+        [HarmonyPatch("OnCollisionEnter")]
+        // ReSharper disable once UnusedType.Local
+        private static class WeaponBlockOnCollisionEnterPatch
+        {
+            [HarmonyPostfix]
+            private static void Postfix(WeaponBlock __instance, Collision collision)
+            {
+                EventManager.InvokeWeaponOnCollisionEnteredEvent(__instance.wp, collision, __instance.stats,
+                    collision.collider.GetComponentInParent<Stats>());
+            }
+        }
     }
 }
